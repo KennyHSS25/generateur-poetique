@@ -969,7 +969,7 @@
             // Création des particules flottantes
             function createParticles() {
                 const particlesContainer = document.getElementById('particles');
-                const particleCount = 30;
+                const particleCount = 60;
                 
                 for (let i = 0; i < particleCount; i++) {
                     const particle = document.createElement('div');
@@ -994,7 +994,7 @@
             // Création des étincelles dorées brûlantes
             function createGoldSparks() {
                 const sparksContainer = document.getElementById('gold-sparks');
-                const maxSparks = 50;
+                const maxSparks = 70;
                 let sparkCount = 0;
                 
                 function createSpark() {
@@ -1201,7 +1201,7 @@
             }
             
             // Volume initial
-            backgroundMusic.volume = 0.4;
+            backgroundMusic.volume = 0.7;
             
             // Fonction pour mettre à jour le compteur
             function updateCounter() {
@@ -1253,7 +1253,7 @@
                     currentIndex = (currentIndex + 1) % artworks.length;
                     changeArtwork(currentIndex);
                     updateCounter();
-                }, 15000); // 15 secondes
+                }, 30000); // 15 secondes
             }
             
             function stopAutoSlide() {
